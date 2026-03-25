@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="OSMO favicon">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#123c69"/>
+      <stop offset="1" stop-color="#2a6f97"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="16" y1="16" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#ef476f"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <circle cx="32" cy="32" r="18" fill="none" stroke="url(#ring)" stroke-width="6"/>
+  <circle cx="32" cy="32" r="5" fill="#f1faee"/>
+  <path d="M20 45c3.4-3 7.5-4.5 12-4.5S40.6 42 44 45" fill="none" stroke="#f1faee" stroke-linecap="round" stroke-width="3"/>
+  <circle cx="25.5" cy="25.5" r="2.5" fill="#f1faee"/>
+  <circle cx="38.5" cy="25.5" r="2.5" fill="#f1faee"/>
+</svg>

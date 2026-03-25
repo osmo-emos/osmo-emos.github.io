@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Self-emotion tracking aims to infer an individual's evolving emotions from egocentric multimodal streams such as voice, visual surroundings, semantic subtext, and eye-tracking signals">
+  <meta name="keywords" content="OSMO, OSIRIS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OSMO: Open-vocabulary Self-eMOtion Tracking</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@latest/dist/echarts.min.js"></script>
+</head>
+<body>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">OSMO: Open-vocabulary Self-eMOtion Tracking</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://moo-osama.github.io/" target="_blank" rel="noopener">Mohamed Abdelfattah</a><sup>1,2</sup><sup>&dagger;</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://btekin.github.io" target="_blank" rel="noopener">Bugra Tekin</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/fadime-sener-674064156/" target="_blank" rel="noopener">Fadime Sener</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://www.cihancamgoz.com" target="_blank" rel="noopener">Necati Cihan Camgoz</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/eric-sauser/" target="_blank" rel="noopener">Eric Sauser</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://shugaoma.github.io/" target="_blank" rel="noopener">Shugao Ma</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://people.epfl.ch/alexandre.alahi?lang=en" target="_blank" rel="noopener">Alexandre Alahi</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://ch.linkedin.com/in/edoardo-remelli-821682102" target="_blank" rel="noopener">Edoardo Remelli</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Meta Reality Labs</span>
+            <span class="author-block"><sup>2</sup>Ecole Polytechnique Federale de Lausanne (EPFL)</span>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>&dagger;</sup>Work done during an internship at Meta.</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (coming soon)</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (coming soon)</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data (coming soon)</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/teaser.png"
+     alt="Teaser"
+     class="mt-6"
+     style="width:100%; height:auto;" />
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">OSIRIS</span> tracks personalized emotions over time using egocentric feed from smart glasses.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section is-light is-small">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce the novel task of <strong>egocentric self-emotion tracking</strong>, 
+            which aims to infer an individual's evolving emotions from egocentric multimodal 
+            streams such as voice, visual surroundings, semantic subtext, and eye-tracking signals. 
+          </p>
+          <p>
+            To establish this research direction, we present: 
+            (1) <strong>OSMO dataset</strong>, 
+            a large-scale annotation effort on 110 hours of existing bilingual smart-glasses recordings, 
+            establishing the largest egocentric emotion dataset and the first with subject-wise emotion timelines; 
+            (2) <strong>OSMO benchmark</strong>, a suite of five tasks (emotion recognition, sentiment, intensity, localization, and reasoning), 
+            that redefine emotion understanding as a continuous, context-aware process rather than discrete classification of trimmed videos; 
+            (3) <strong>OSIRIS</strong>, a large multimodal model that tracks emotions over time by reasoning over the user's personal emotion history, 
+            current expressions, and egocentric observations.
+          </p>
+          <p>
+             Extensive evaluations show that OSIRIS achieves a state-of-the-art performance, 
+             delivering, for the first time, coherent emotion timelines from egocentric data. 
+             Dataset, model, and codes will be fully open-sourced upon publication.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section is-light is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Citation</h2>
+        <div class="content">
+          <p>If you find this work useful, please cite:</p>
+          <div style="position: relative;">
+            <button
+              id="copy-citation-button"
+              class="button is-small is-rounded"
+              type="button"
+              aria-label="Copy citation"
+              title="Copy citation"
+              style="position: absolute; top: 0.75rem; right: 0.75rem; z-index: 1;"
+            >
+              <span class="icon is-small">
+                <i class="far fa-copy"></i>
+              </span>
+            </button>
+            <pre><code id="citation-text">@inproceedings{abdelfattah2026osmo,
+  title={OSMO: Open-vocabulary Self-eMOtion Tracking},
+  author={Abdelfattah, Mohamed and Tekin, Bugra and Sener, Fadime and Camgoz, Necati Cihan and Sauser, Eric and Ma, Shugao and Alahi, Alexandre and Remelli, Edoardo},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2026}
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p style="font-size: 0.9rem;">
+      © 2026 Mohamed Abdelfattah.
+      All rights reserved.
+    </p>
+    <p style="font-size: 0.9rem;">
+      This project page is for research and academic communication.
+    </p>
+  </div>
+</footer>
+
+
+
+
+
+</body>
+</html>
